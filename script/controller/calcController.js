@@ -33,6 +33,7 @@ class calcController{
         let btn7 = document.querySelector('.btn-7')
         let btn8 = document.querySelector('.btn-8')
         let btn9 = document.querySelector('.btn-9')
+        let dot = document.querySelector('.btn-dot')
         btn0.addEventListener('click', ()=>{
             this._varSupport += '0'
             this._varSupport2 = this._varSupport
@@ -83,7 +84,11 @@ class calcController{
             this._varSupport2 = this._varSupport
             this._showDisplay.innerHTML = this._varSupport
         })
-
+        dot.addEventListener('click', ()=>{
+            this._varSupport += '.'
+            this._varSupport2 = this._varSupport
+            this._showDisplay.innerHTML = this._varSupport
+        })
     }
     
     operations(){
