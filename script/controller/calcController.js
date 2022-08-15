@@ -8,7 +8,6 @@ class calcController{
         this.setDisplayTimeDate();
         this.buttonEvents();
         this.initialize();
-        this.display();
         this.operations();
         this.calculo();
         this.clear();
@@ -21,9 +20,6 @@ class calcController{
         setInterval(() => {
             this.setDisplayTimeDate()
         }, 1000)
-    }
-    display(){
-        //this._showDisplay.innerHTML = this._varSupport
     }
     
     buttonEvents(){
