@@ -113,10 +113,6 @@ class calcController{
             this._showDisplay.innerHTML = this._varSupport
         })
         
-        let prcnt = document.querySelector('.btn-percent')
-        prcnt.addEventListener('click', () =>{
-            this._showDisplay.innerHTML = ''
-        })
         let root = document.querySelector('.btn-root')
         root.addEventListener('click', () =>{
             this._varSupport = this._varSupport2 + '** (1 / 2)'
@@ -141,7 +137,7 @@ class calcController{
            let resultado = eval(this._varSupport)
            let result = resultado.toString()
            if(result.length > 13){
-                this._showDisplay.innerHTML = result.substr(0,6)
+                this._showDisplay.innerHTML = result.substr(0,6) + '...'
            }
            else{
             this._showDisplay.innerHTML = resultado
